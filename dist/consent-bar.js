@@ -1,8 +1,17 @@
+/**
+ * DataCrew CMP - Consent Bar
+ * Self-hosted version with configurable texts via window.__dcCmpConfig.tx
+ *
+ * Config is read from window.__dcCmpConfig (set by the GTM template).
+ * All text fields can be overridden via config.tx — see GTM template parameters.
+ *
+ * ES5 compatible.
+ */
 (function (w, d) {
   'use strict';
 
   // ── Config ─────────────────────────────────────────────────────────────────
-  var cfg = w.__dcCmpConfig || {};
+  var cfg = w.__gcCmpConfig || {};
   var tx  = cfg.tx || {};
 
   // Text defaults (Hungarian). Any field can be overridden via cfg.tx.
@@ -40,7 +49,7 @@
 
   // Links
   var showPrivacyPolicy = cfg.opp !== 0;
-  var privacyPolicyUrl  = cfg.ppHu || cfg.ppDf || '/privacy-policy/';
+  var privacyPolicyUrl  = cfg.ppDf || '/adatvedelem/';
 
   // Events / API
   var globalObjectName = cfg.go  || 'GCConsent';
