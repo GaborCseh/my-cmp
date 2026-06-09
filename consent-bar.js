@@ -43,7 +43,7 @@
   var privacyPolicyUrl  = cfg.ppHu || cfg.ppDf || '/privacy-policy/';
 
   // Events / API
-  var globalObjectName = cfg.go  || 'DataCrewConsent';
+  var globalObjectName = cfg.go  || 'GCConsent';
   var enableCCU        = cfg.ccu !== false;
   var enableFCU        = cfg.fcu === true;
 
@@ -52,7 +52,7 @@
   var crossDomainHosts = cfg.xdh || '';
 
   // IDs
-  var COOKIE_NAME = 'datacrew-consent';
+  var COOKIE_NAME = 'gc-consent';
   var BANNER_ID   = 'dc-cmp-banner';
   var OVERLAY_ID  = 'dc-cmp-overlay';
 
