@@ -1,10 +1,7 @@
 /**
- * DataCrew CMP - Consent Bar
- * Self-hosted version with configurable texts via window.__dcCmpConfig.tx
- *
- * Config is read from window.__dcCmpConfig (set by the GTM template).
+ * GC CMP - Consent Bar v1.0
+ * Config is read from window.__gcCmpConfig (set by the GTM template).
  * All text fields can be overridden via config.tx — see GTM template parameters.
- *
  * ES5 compatible.
  */
 (function (w, d) {
@@ -29,7 +26,7 @@
     catMktLabel:  tx.catMktLabel  !== undefined ? tx.catMktLabel  : 'Marketing',
     catMktDesc:   tx.catMktDesc   !== undefined ? tx.catMktDesc   : 'Személyre szabott hirdetések megjelenítéséhez és remarketing kampányok futtatásához szükségesek.',
     privacyLink:  tx.privacyLink  !== undefined ? tx.privacyLink  : 'Adatvédelmi tájékoztató',
-    poweredBy:    tx.poweredBy    !== undefined ? tx.poweredBy    : 'Powered by DataCrew CMP'
+    poweredBy:    tx.poweredBy    !== undefined ? tx.poweredBy    : 'Powered by GC CMP'
   };
 
   // Appearance
